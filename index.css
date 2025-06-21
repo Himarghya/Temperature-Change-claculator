@@ -1,0 +1,45 @@
+body{
+    background-image: linear-gradient(to right, lightgreen, lightblue);
+    animation : slide-gradient 5s linear infinite;
+}
+@keyframes slide-gradient{
+    0%{
+        background-position: 0 0 ;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
+.Container{
+    height: 500px;
+    width : 500px;
+    background-color: aliceblue;
+    opacity: 0.6;
+    position: absolute;
+    top:50%;
+    left:50%;
+   transform: translate(-50% , -50%);
+   box-shadow: 0 0 10px whitesmoke;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+.temperature{
+    font-size: 1.5rem;
+    margin: 45px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+input{
+    font-size: 2rem ;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: azure;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: inset 0 0 4px black;
+}
